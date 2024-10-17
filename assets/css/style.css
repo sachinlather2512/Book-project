@@ -53,10 +53,6 @@
     gap: 10px;
 }
 
-.sec-3 {
-    width: 250px;
-    /* height:; */
-}
 
 .image-1 {
     width: 150px;
@@ -103,4 +99,30 @@
         transform: rotate(-50deg) translateY(-50%);
       }
    
+}
+
+/* @media (min-width: 992px) and (max-width: 1200px) {
+    .book-card{
+        width: 200px;
+    }
+} */
+
+/* book card */
+.book-card{
+    width:250px;
+    background-color: #f6e5e3;
+}
+
+.book-tittle{
+    font-weight: bolder;
+}
+
+.card-btn{
+    background-color: rgb(63, 131, 99);
+    color: white;
+}
+
+.card-btn:hover{
+    background-color: rgb(15, 130, 15);
+    color: white;
 }

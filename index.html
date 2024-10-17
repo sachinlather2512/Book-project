@@ -23,30 +23,30 @@
 
 <body>
 
-  <header>
+  <header >
 
     <!-- navbar container -->
-      <nav class="navbar navbar-expand-lg header-1">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-       <ul id="menu-bar" class="flex align-items-center justify-content-center gap-3 mb-0 menu-icon">
-        <li><a onclick="menubar()" href="#images" class="text-dark">Home</a></li>
-        <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
-        <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
-        <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
-        <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
-       </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success search-box" type="submit">Search</button>
-          </form>
-          <div onclick="menubar()" id="menu-list" class="menu flex flex-column gap-1 position-relative">
-            <span class="menu-line w-full line-1"></span>
-            <span class="menu-line w-full line-2"></span>
-            <span class="menu-line w-full line-3"></span>
-          </div>
+    <nav class="navbar navbar-expand-lg header-1">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul id="menu-bar" class="flex align-items-center justify-content-center gap-3 mb-0 menu-icon">
+          <li><a onclick="menubar()" href="#images" class="text-dark">Home</a></li>
+          <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
+          <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
+          <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
+          <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success search-box" type="submit">Search</button>
+        </form>
+        <div onclick="menubar()" id="menu-list" class="menu flex flex-column gap-1 position-relative">
+          <span class="menu-line w-full line-1"></span>
+          <span class="menu-line w-full line-2"></span>
+          <span class="menu-line w-full line-3"></span>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <div class="header-2 container-fluid">
       <div class="container">
@@ -155,42 +155,66 @@
   </div>
 
   <!-- section 3 -->
-  <div class="container flex">
-    <div class="card  sec-3" id="images">
-      <img src="/assets/images/s5.jpg" class="card-img-top image-1" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Sunderkand</h5>
-        <p class="card-text">by Goswami Tulsidas</p>
-        <a class="btn btn-primary">Buy now</a>
-      </div>
-    </div>
-    <div class="card  sec-3">
-      <img src="/assets/images/s1.jpg" class="card-img-top " alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Sunderkand</h5>
-        <p class="card-text">by Goswami Tulsidas</p>
-        <a class="btn btn-primary">Buy now</a>
-      </div>
-    </div>
+  <div class="container my-5 ">
+    <h1 class="text-center">Poetry</h1>
 
-    <div class="card  sec-3">
-      <img src="/assets/images/s1.jpg" class="card-img-top " alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Sunderkand</h5>
-        <p class="card-text">by Goswami Tulsidas</p>
-        <a class="btn btn-primary">Buy now</a>
-      </div>
-    </div>
+    <div class="d-flex gap-4 row justify-content-center my-3">
 
-    <div class="card  sec-3">
-      <img src="/assets/images/s1.jpg" class="card-img-top " alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Sunderkand</h5>
-        <p class="card-text">by Goswami Tulsidas</p>
-        <a class="btn btn-primary">Buy now</a>
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/poetry1.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">The Complete Poems of Emily Dickinson</p>
+          <p>Emily Dickinson</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/poetry2.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">The Poetry of Robert Frost</p>
+          <p>Robert Frost</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/poetry3.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">The Raven</p>
+          <p>Edgar Allan Poe</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/poetry4.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">The Sun and Her Flowers</p>
+          <p>Rupi Kaur</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
       </div>
     </div>
   </div>
+
+
+
+
+
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
