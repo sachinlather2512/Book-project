@@ -5,7 +5,7 @@
     /* font-family: sans-serif; */
     text-decoration: none !important;
     list-style-type: none;
-    
+
 }
 
 .header-1 {
@@ -65,9 +65,6 @@
     gap: 10px;
 }
 
-
-
-
 .border-black {
     border: 1px solid #000;
 }
@@ -78,6 +75,10 @@
 }
 
 @media (max-width:992px) {
+    .web-heading{
+        margin-top: 20px;
+    }
+
     .menu-icon {
         position: fixed;
         top: 0;
@@ -137,18 +138,17 @@
 .image-1 {
     width: 100px;
     height: 150px;
-    /* margin: auto; */
     margin-top: 10px;
 }
 
-.book-author{
-    font-size: 10px;
+.book-author {
+    font-size: 12px;
+    color: #347d56;
 }
 
 .book-card {
     width: 150px;
     background-color: #ffe8e6;
-
 }
 
 .book-tittle {
@@ -156,18 +156,56 @@
 }
 
 .card-btn {
-    background-color: rgb(63, 131, 99);
+    background-color: #5dbea3;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
 .card-btn:hover {
-    background-color: rgb(15, 130, 15);
+    background-color: #5adbb5;
     color: white;
 }
 
-.book-tittle+p {
-    color: #347d56;
+
+/* @media (max-width:768) {
+    .image-1 {
+        width: 100px;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .book-tittle {
+        font-size: 12px;
+    }
+    .book-card {
+        width: 150px;
+        background-color: #ffe8e6;
+    }
+} */
+
+@media (min-width:768px) {
+    .image-1 {
+        width: 150px;
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    .book-tittle {
+        font-size: 16px;
+    }
+
+    .book-card {
+        width: 200px;
+        background-color: #ffe8e6;
+    }
+
+    .book-author {
+        font-size: 16px;
+    }
+
+    .card-btn {
+        font-size: 16px;
+    }
 }
 
 /* footer */
@@ -209,7 +247,33 @@
 
 .sm-icon {
     margin: 0px 15px;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
 }
 
 
+/* modal form */
+.modal-form {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.modal-form:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.sign-up-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #F65D4E;
+    border: none;
+    color: white;
+}
+
+.sign-up-btn:active{
+    background-color: #f44336;
+}

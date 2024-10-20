@@ -23,6 +23,34 @@
 
 <body>
 
+  <!-- Modal -->
+  <div class="modal fade" id="signup-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-4" id="exampleModalLabel">Create account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <label for="input-mail" class="fw-bold">E-mail</label>
+            <input type="email" class="mb-3 modal-form" id="input-mail" required>
+
+            <label for="input-password" class="fw-bold">Password</label>
+            <input type="password" class="mb-3 modal-form" id="input-password" required>
+
+            <label for="input-password" class="fw-bold">Confirm Password</label>
+            <input type="password" class="mb-3 modal-form" id="input-password" required>
+
+            <input type="submit" name="submit" value="Sign Up" class="sign-up-btn">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <header id="top">
 
     <!-- navbar container -->
@@ -69,8 +97,8 @@
     <div class="header-2 container-fluid">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6 row-cols-12 text-center">
-            <h1>Welcome to Book.com</h1>
+          <div class="col-md-6 row-cols-12 text-center web-heading">
+            <h1 >Welcome to Our Website</h1>
             <p class="lh-lg">Discover a universe where the magic of words leaps off the page and into your imagination.
               Our online
               bookstore is more than just a shop—it's a community of avid readers, curious minds, and storytellers.
@@ -211,10 +239,10 @@
           <img class="image-1" src="/assets/images/poetry1.jpg" alt="">
         </div>
 
-        <div class="p-3">
-          <p class="book-tittle">The Complete Poems of Emily Dickinson</p>
+        <div class="p-1">
+          <p class="book-tittle ">The Complete Poems of Emily Dickinson</p>
           <p class="book-author">Emily Dickinson</p>
-          <button class="card-btn btn">Wants to read</button>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -223,10 +251,10 @@
           <img class="image-1" src="/assets/images/poetry2.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">The Poetry of Robert Frost</p>
-          <p>Robert Frost</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author">Robert Frost</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -235,10 +263,10 @@
           <img class="image-1" src="/assets/images/poetry3.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">The Raven</p>
-          <p>Edgar Allan Poe</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author">Edgar Allan Poe</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -247,10 +275,10 @@
           <img class="image-1" src="/assets/images/poetry4.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">The Sun and Her Flowers</p>
-          <p>Rupi Kaur</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author">Rupi Kaur</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
     </div>
@@ -268,10 +296,10 @@
           <img class="image-1" src="/assets/images/drama1.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">Jail Diary Of Bhagat Singh</p>
-          <p> Bhagat Singh </p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author"> Bhagat Singh </p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -280,10 +308,10 @@
           <img class="image-1" src="/assets/images/drama2.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">Inherit the Wind</p>
-          <p> Jerome Lawrence</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author"> Jerome Lawrence</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -292,10 +320,10 @@
           <img class="image-1" src="/assets/images/drama6.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle ">SILENCE!THE COURT IS IN SESSION</p>
-          <p> Vijay Tendulkar</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author"> Vijay Tendulkar</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -304,10 +332,10 @@
           <img class="image-1" src="/assets/images/drama5.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">Animal Farm by George Orwell</p>
-          <p>George Orwell</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author">George Orwell</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
     </div>
@@ -324,10 +352,10 @@
           <img class="image-1" src="/assets/images/bio1.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">Einstein: His Life and Universe</p>
-          <p> Walter Isaacson </p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author"> Walter Isaacson </p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -336,10 +364,10 @@
           <img class="image-1" src="/assets/images/bio2.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">Wings of Fire: An Autobiography</p>
-          <p> A.P.J. Abdul Kalam</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author"> A.P.J. Abdul Kalam</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -348,10 +376,10 @@
           <img class="image-1" src="/assets/images/drama6.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle ">SILENCE!THE COURT IS IN SESSION</p>
-          <p> Vijay Tendulkar</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author"> Vijay Tendulkar</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -360,10 +388,10 @@
           <img class="image-1" src="/assets/images/drama5.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">Animal Farm by George Orwell</p>
-          <p>George Orwell</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author">George Orwell</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
     </div>
@@ -380,10 +408,10 @@
           <img class="image-1" src="/assets/images/history1.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">Freedom At Midnight</p>
-          <p>Dominique Lapierre</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author">Dominique Lapierre</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -392,10 +420,10 @@
           <img class="image-1" src="/assets/images/history3.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle ">India: A History</p>
-          <p> John Keay</p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author"> John Keay</p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -404,10 +432,10 @@
           <img class="image-1" src="/assets/images/history2.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">The Wonder That Was India</p>
-          <p>A. L. Basham </p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author">A. L. Basham </p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
 
@@ -418,11 +446,10 @@
           <img class="image-1" src="/assets/images/history4.jpg" alt="">
         </div>
 
-        <div class="p-3">
+        <div class="p-1">
           <p class="book-tittle">India: The Mother of Democracy</p>
-          <p>
-            Raghuvendra Tanwar </p>
-          <button class="card-btn btn">Wants to read</button>
+          <p class="book-author">Raghuvendra Tanwar </p>
+          <button class="card-btn btn" data-bs-toggle="modal" data-bs-target="#signup-modal">Read more</button>
         </div>
       </div>
     </div>
@@ -448,20 +475,20 @@
           <div class="col-sm-4">
             <h3>Policies</h3>
             <ul class="list-unstyled">
-              <li><a class="flinks" >Privacy Policies</a></li>
-              <li><a class="flinks" >Terms of Use</a></li>
-              <li><a class="flinks" >Secure Shopping</a></li>
-              <li><a class="flinks" >Copyright Policy</a></li>
+              <li><a class="flinks">Privacy Policies</a></li>
+              <li><a class="flinks">Terms of Use</a></li>
+              <li><a class="flinks">Secure Shopping</a></li>
+              <li><a class="flinks">Copyright Policy</a></li>
             </ul>
           </div>
 
           <div class="col-sm-4">
             <h3>Help</h3>
             <ul class="list-unstyled">
-              <li><a class="flinks" >Payment</a></li>
-              <li><a class="flinks" >Shipping</a></li>
-              <li><a class="flinks" >Return</a></li>
-              <li><a class="flinks" >FAQ</a></li>
+              <li><a class="flinks">Payment</a></li>
+              <li><a class="flinks">Shipping</a></li>
+              <li><a class="flinks">Return</a></li>
+              <li><a class="flinks">FAQ</a></li>
             </ul>
           </div>
 
