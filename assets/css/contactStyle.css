@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    color: #f4402f;
+}
+
+.myclass {
+    color: #f4402f;
+}
+
+p {
+    font-size: px;
+}
+
+.contact-form input {
+    width: 70%;
+}
+
+.message {
+    width: 70%;
+    height: 500px;
+}
+
+.send-btn {
+    width: 30%;
+    background-color: #f4402f;
+    color: white;
+    padding: 12px 10px;
+}
+
+.s-btn button i {
+    margin-right: 10px;
+}
+
+@media (max-width:576px) {
+    .contact-form input {
+        width: 100%;
+    }
+    .message{
+        width: 100%;
+    }
+    .send-btn{
+        width: 50%;
+    }
+}
+
+/* @media (min-width:500px) and (max-width:576px) {
+    .contact-form input {
+        width: 100%;
+    }
+    .message{
+        width: 100%;
+    }
+    .send-btn{
+        width: 40%;
+    }
+}
+ */
+
+ @media (min-width:576px) and (max-width:1200px) {
+    .contact-form input {
+        width: 80%;
+    }
+    .message{
+        width: 80%;
+    }
+    .send-btn{
+        width: 50%;
+    }
+}
+
+.contact-us:hover{
+    color: #f4402f;
+}

@@ -23,22 +23,39 @@
 
 <body>
 
-  <header >
+  <header id="top">
 
     <!-- navbar container -->
-    <nav class="navbar navbar-expand-lg header-1">
+    <nav class="navbar navbar-expand-lg header-1 ">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <div>
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <i class="fa-solid fa-book-open-reader fa-2xl"></i>
+            <span class="fs-1">Book</span>
+          </a>
+        </div>
+
         <ul id="menu-bar" class="flex align-items-center justify-content-center gap-3 mb-0 menu-icon">
-          <li><a onclick="menubar()" href="#images" class="text-dark">Home</a></li>
-          <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
-          <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
-          <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
-          <li><a onclick="menubar()" href="#" class="text-dark">Home</a></li>
+          <li><a onclick="menubar()" href="#images" class=" nav-links">Home</a></li>
+          <li><a onclick="menubar()" href="#" class="nav-links">About</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="nav-links dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#poetry">Poetry</a></li>
+              <li><a class="dropdown-item" href="#drama">Drama</a></li>
+              <li><a class="dropdown-item" href="#biography">Biography</a></li>
+              <li><a class="dropdown-item" href="#historical">Historical</a></li>
+            </ul>
+          </li>
+
+          <li><a onclick="menubar()" href="/contactUs.html" class="nav-links">Contact us</a></li>
+          <li><a onclick="menubar()" href="#" class="nav-links"></a></li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success search-box" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="Search by Title, Author" aria-label="Search">
+          <button class="btn btn-outline-light search-box" type="submit">Search</button>
         </form>
         <div onclick="menubar()" id="menu-list" class="menu flex flex-column gap-1 position-relative">
           <span class="menu-line w-full line-1"></span>
@@ -46,75 +63,46 @@
           <span class="menu-line w-full line-3"></span>
         </div>
       </div>
+
     </nav>
 
     <div class="header-2 container-fluid">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6 row-cols-12">
+          <div class="col-md-6 row-cols-12 text-center">
             <h1>Welcome to Book.com</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, facilis tenetur impedit voluptatibus
-              officiis quo quaerat. Sit, quo earum libero distinctio in placeat ex cupiditate qui explicabo reiciendis
-              iusto dolore accusantium quasi quos vero labore magnam tempora fugiat voluptatem. Sequi enim quasi cum
-              incidunt! Sint iste optio aliquid pariatur magnam doloremque ratione qui ex labore quam dolores nemo
-              .</p>
+            <p class="lh-lg">Discover a universe where the magic of words leaps off the page and into your imagination.
+              Our online
+              bookstore is more than just a shop—it's a community of avid readers, curious minds, and storytellers.
+              Here, you’ll find everything from timeless classics and thrilling mysteries to heartwarming romances and
+              cutting-edge non-fiction.
+              Whether you’re seeking inspiration, adventure, or a cozy escape, our curated selection ensures there’s
+              something for everyone. Dive in and embark on your next literary journey. Happy reading!</p>
 
             <button class="learnbtn btn">Learn More</button>
           </div>
 
+          <!-- header image -->
           <div class="col-md-6 row-cols-12 align-items-center">
-            <img class="img-fluid" src="/assets/images/reading-books.png" alt="">
+            <img class="img-fluid " src="/assets/images/reading-books.png" alt="">
           </div>
+
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="swiper mySwiper w-full h-full my-4">
-        <div class="swiper-wrapper ">
-          <div class="swiper-slide p-3 border-black">
-            <h1>Welcome to Book.com</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, facilis tenetur impedit voluptatibus
-              officiis quo quaerat. Sit, quo earum libero distinctio in placeat ex cupiditate qui explicabo reiciendis
-              iusto dolore accusantium quasi quos vero labore magnam tempora fugiat voluptatem. Sequi enim quasi cum
-              incidunt! Sint iste optio aliquid pariatur magnam doloremque ratione qui ex labore quam dolores nemo
-              .</p>
-          </div>
-          <div class="swiper-slide p-3 border-black">
-            <h1>Welcome to Book.com</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, facilis tenetur impedit voluptatibus
-              officiis quo quaerat. Sit, quo earum libero distinctio in placeat ex cupiditate qui explicabo reiciendis
-              iusto dolore accusantium quasi quos vero labore magnam tempora fugiat voluptatem. Sequi enim quasi cum
-              incidunt! Sint iste optio aliquid pariatur magnam doloremque ratione qui ex labore quam dolores nemo
-              .</p>
-          </div>
-          <div class="swiper-slide p-3 border-black">
-            <h1>Welcome to Book.com</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, facilis tenetur impedit voluptatibus
-              officiis quo quaerat. Sit, quo earum libero distinctio in placeat ex cupiditate qui explicabo reiciendis
-              iusto dolore accusantium quasi quos vero labore magnam tempora fugiat voluptatem. Sequi enim quasi cum
-              incidunt! Sint iste optio aliquid pariatur magnam doloremque ratione qui ex labore quam dolores nemo
-              .</p>
-          </div>
-          <div class="swiper-slide p-3 border-black">
-            <h1>Welcome to Book.com</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, facilis tenetur impedit voluptatibus
-              officiis quo quaerat. Sit, quo earum libero distinctio in placeat ex cupiditate qui explicabo reiciendis
-              iusto dolore accusantium quasi quos vero labore magnam tempora fugiat voluptatem. Sequi enim quasi cum
-              incidunt! Sint iste optio aliquid pariatur magnam doloremque ratione qui ex labore quam dolores nemo
-              .</p>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+
   </header>
 
   <!-- section 2 -->
   <div class="sec-2 container my-5">
     <div class="row gy-4">
       <div class="col-lg-3 col-sm-6 col-12 ">
-        <div class="d-flex align-items-center gap-3 p-2" style="background-color: #fcd9d6;">
-          <i class="fa-solid fa-truck "></i>
-          <div class="sec-2-part ">
+        <div class="d-flex align-items-center gap-3 p-2 rounded-4 justify-content-center"
+          style="background-color: #fcb9b3;">
+          <i class="fa-solid fa-truck"></i>
+          <div class="sec-2-part ps-2">
             <h2>Free Shipping</h2>
             <p>Order over $100</p>
           </div>
@@ -122,31 +110,34 @@
       </div>
 
       <div class="col-lg-3 col-sm-6 col-12">
-        <div class="d-flex align-items-center gap-3 p-2" style="background-color: #fcd9d6;">
+        <div class="d-flex align-items-center gap-3 p-2 rounded-4 justify-content-center"
+          style="background-color: #fcb9b3;">
           <i class="fa-solid fa-lock"></i>
-          <div class="sec-2-part">
-            <h2>Free Shipping</h2>
-            <p>Order over $100</p>
+          <div class="sec-2-part ps-2">
+            <h2>Secure Payment</h2>
+            <p>100% Secure</p>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-sm-6 col-12">
-        <div class="d-flex align-items-center gap-3 p-2" style="background-color: #fcd9d6;">
+        <div class="d-flex align-items-center gap-3 p-2 rounded-4 justify-content-center"
+          style="background-color: #fcb9b3;">
           <i class="fa-solid fa-arrow-rotate-right"></i>
-          <div class="sec-2-part">
-            <h2>Free Shipping</h2>
-            <p>Order over $100</p>
+          <div class="sec-2-part ps-2">
+            <h2>Easy Returns</h2>
+            <p>7 Day Returns</p>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-sm-6 col-12">
-        <div class="d-flex align-items-center gap-3 p-2" style="background-color: #fcd9d6;">
+        <div class="d-flex align-items-center gap-3 p-2 rounded-4 justify-content-center"
+          style="background-color: #fcb9b3;">
           <i class="fa-solid fa-headset"></i>
-          <div class="sec-2-part">
-            <h2>Free Shipping</h2>
-            <p>Order over $100</p>
+          <div class="sec-2-part ps-2">
+            <h2>24/7 Support</h2>
+            <p>Call Us Anytime</p>
           </div>
         </div>
       </div>
@@ -154,9 +145,64 @@
     </div>
   </div>
 
-  <!-- section 3 -->
-  <div class="container my-5 ">
-    <h1 class="text-center">Poetry</h1>
+  <!-- Swiper -->
+  <div class="container" id="author-id">
+    <h1 class="text-center">Featured Authors</h1>
+    <div class="swiper mySwiper w-full h-full my-4">
+      <div class="swiper-wrapper ">
+
+        <div class="swiper-slide p-3 border-black rounded-3 shadow- aut-colo">
+          <div class="d-flex align-items-center ">
+            <img src="/assets/authorsImages/arundhati.jpg" class="rounded-circle me-4 mb-4 ">
+            <h2 class="fst-italic">Arundhati Roy</h2>
+          </div>
+          <p>Arundhati Roy is an Indian writer, best known for her book The God of Small Things (1997), which won the
+            Man Booker Prize for Fiction in 1997. She was born in Shillong, Meghalaya, India. Her parents were Rajib
+            Roy, a Bengali Hindu tea plantation anager from Calcutta and Mary Roy, a Malayali Syrian Christian women's
+            rights activist from Kerala.</p>
+        </div>
+
+        <div class="swiper-slide p-3 border-black rounded-3 shadow aut-colo">
+          <div class="d-flex align-items-center">
+            <img src="/assets/authorsImages/johngreen.jpg" class="rounded-circle me-4 mb-4 ">
+            <h2 class="fst-italic">John Green</h2>
+          </div>
+          <p>John Michael Green is the author of Looking for Alaska, An Abundance of Katherines, Paper Towns, and The
+            Fault in Our Stars. He is an American author, vlogger, writer, producer, actor and editor. He was born in
+            Indianapolis, Indiana on august 24,1977. John grew up in Orlando, Florida. Then he attended Indian Springs
+            School.</p>
+        </div>
+
+        <div class="swiper-slide p-3 border-black rounded-3 shadow aut-colo">
+          <div class="d-flex align-items-center">
+            <img src="/assets/authorsImages/arthurconandoyle.jpg" class="rounded-circle me-4 mb-4 img-small">
+            <h2 class="fst-italic">Sir Arthur Conan Doyle</h2>
+          </div>
+          <p>You see, but you do not observe. The distinction is clear.’ Famous for his art of deduction, a significant
+            fictional character known by all, Sherlock Holmes whose creator is a British writer who originally happened
+            to be physician, Sir Arthur Conan Dyle. He wrote around 4 major novels and city-short stories revolving
+            around the lives of Sherlock Holmes.</p>
+        </div>
+
+        <div class="swiper-slide p-3 border-black rounded-3 shadow aut-colo">
+          <div class="d-flex align-items-center">
+            <img src="/assets/authorsImages/gayle-forman.jpg" class="rounded-circle me-4 mb-4  img-small">
+            <h2 class="fst-italic">Gayle Forman</h2>
+          </div>
+          <p>Gayle Forman is an American young adult fiction author. She was born in June 5, 1978 in in Los Angeles. Her
+            best known novel is If I Stay which topped the New York bestseller list for young adult fiction category. It
+            was later made into a film to. Forman began her career with writing for Seventeen Magazine. Later she worked
+            as a freelance journalist . </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- section 3 poetry-->
+
+  <div class="container my-5 " id="categories-id">
+    <h1 class="text-center" id="poetry">Poetry</h1>
 
     <div class="d-flex gap-4 row justify-content-center my-3">
 
@@ -210,8 +256,236 @@
     </div>
   </div>
 
+  <!-- section 4 drama-->
+
+  <div class="container my-5 ">
+    <h1 class="text-center" id="drama">Drama</h1>
+
+    <div class="d-flex gap-4 row justify-content-center my-3">
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/drama1.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">Jail Diary Of Bhagat Singh</p>
+          <p> Bhagat Singh </p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/drama2.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">Inherit the Wind</p>
+          <p> Jerome Lawrence</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/drama6.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle ">SILENCE!THE COURT IS IN SESSION</p>
+          <p> Vijay Tendulkar</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/drama5.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">Animal Farm by George Orwell</p>
+          <p>George Orwell</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 5 biography -->
+  <div class="container my-5 ">
+    <h1 class="text-center" id="biography">Biography</h1>
+
+    <div class="d-flex gap-4 row justify-content-center my-3">
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/bio1.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">Einstein: His Life and Universe</p>
+          <p> Walter Isaacson </p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/bio2.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">Wings of Fire: An Autobiography</p>
+          <p> A.P.J. Abdul Kalam</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/drama6.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle ">SILENCE!THE COURT IS IN SESSION</p>
+          <p> Vijay Tendulkar</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/drama5.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">Animal Farm by George Orwell</p>
+          <p>George Orwell</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 6 history -->
+  <div class="container my-5 ">
+    <h1 class="text-center" id="historical">Historical </h1>
+
+    <div class="d-flex gap-4 row justify-content-center my-3">
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/history1.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">Freedom At Midnight</p>
+          <p>Dominique Lapierre</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/history3.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle ">India: A History</p>
+          <p> John Keay</p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/history2.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">The Wonder That Was India</p>
+          <p>A. L. Basham </p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
 
 
+
+      <div class="book-card border-1 border-black d-flex flex-column align-items-center">
+        <div class="">
+          <img class="image-1" src="/assets/images/history4.jpg" alt="">
+        </div>
+
+        <div class="p-3">
+          <p class="book-tittle">India: The Mother of Democracy</p>
+          <p>
+            Raghuvendra Tanwar </p>
+          <button class="card-btn btn">Wants to read</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 7 footer -->
+  <footer class="mt-5">
+    <div class="footer">
+      <div class="container py-4">
+
+        <div class="row text-center pt-3">
+
+          <div class="col-sm-4">
+            <h3>Quick links</h3>
+            <ul class="list-unstyled ">
+              <li><a class="flinks" href="/index.html">Home</a></li>
+              <li><a class="flinks" href="#author-id">Authors</a></li>
+              <li><a class="flinks" href="#categories-id">Categories</a></li>
+              <li><a class="flinks" href="">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4">
+            <h3>Policies</h3>
+            <ul class="list-unstyled">
+              <li><a class="flinks" >Privacy Policies</a></li>
+              <li><a class="flinks" >Terms of Use</a></li>
+              <li><a class="flinks" >Secure Shopping</a></li>
+              <li><a class="flinks" >Copyright Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4">
+            <h3>Help</h3>
+            <ul class="list-unstyled">
+              <li><a class="flinks" >Payment</a></li>
+              <li><a class="flinks" >Shipping</a></li>
+              <li><a class="flinks" >Return</a></li>
+              <li><a class="flinks" >FAQ</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- social media icons -->
+        <div>
+          <div class="social-icons text-center py-3">
+            <i class="fa-brands fa-instagram fa-2xl sm-icon"></i>
+            <i class="fa-brands fa-whatsapp fa-2xl sm-icon"></i>
+            <i class="fa-brands fa-facebook fa-2xl sm-icon"></i>
+            <i class="fa-brands fa-x-twitter fa-2xl sm-icon"></i>
+            <i class="fa-brands fa-linkedin-in fa-2xl sm-icon"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p class="fs-5 text-center mt-2 mb-2">Copyright &copy 2024. All Rights Reserved</p>
+    </div>
+
+  </footer>
 
 
 
@@ -246,6 +520,7 @@
         }
       }
     });
+
   </script>
   <!-- javascript files -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
