@@ -66,12 +66,7 @@
 }
 
 
-.image-1 {
-    width: 150px;
-    height: 200px;
-    margin: auto;
-    margin-top: 3rem;
-}
+
 
 .border-black {
     border: 1px solid #000;
@@ -138,28 +133,32 @@
     color: #000;
 }
 
-
-
-/* @media (min-width: 992px) and (max-width: 1200px) {
-    .book-card{
-        width: 200px;
-    }
-} */
-
 /* book card */
+.image-1 {
+    width: 100px;
+    height: 150px;
+    /* margin: auto; */
+    margin-top: 10px;
+}
+
+.book-author{
+    font-size: 10px;
+}
+
 .book-card {
-    width: 300px;
+    width: 150px;
     background-color: #ffe8e6;
 
 }
 
 .book-tittle {
-    font-weight: bolder;
+    font-size: 12px;
 }
 
 .card-btn {
     background-color: rgb(63, 131, 99);
     color: white;
+    font-size: 10px;
 }
 
 .card-btn:hover {
