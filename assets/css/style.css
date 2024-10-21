@@ -28,6 +28,7 @@
 
 .learnbtn {
     background-color: #F65D4E;
+    color: white;
 }
 
 .learnbtn:hover {
@@ -250,6 +251,10 @@
     transition: all 0.2s linear;
 }
 
+.social-icons a{
+    color: #212529;
+}
+
 
 /* modal form */
 .modal-form {
@@ -276,4 +281,16 @@
 
 .sign-up-btn:active{
     background-color: #f44336;
+}
+
+
+/* about us */
+.about-us-image{
+    width: 100%;
+    /* height: 500px; */
+}
+
+.about-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
