@@ -38,7 +38,8 @@
 /* section 2 */
 .sec-2 div div i {
     font-size: 40px;
-    color: #F65D4E;
+    /* color: #F65D4E; */
+    color: #1e3050;
 }
 
 .sec-2-part h2 {
@@ -58,6 +59,28 @@
     background-color: #ede2e1e0;
     /* box-shadow: 10px 20px rgb(31, 30, 30); */
 }
+
+
+/* book categories */
+.book-icons{
+    width: 100px;
+}
+
+.book-icons + p {
+    font-weight: 500;
+}
+
+.book-categories-sec{
+    /* margin-top: 75px; */
+    background-color: 	#dcedf8;
+}
+@media (max-width:576px) {
+    .book-icons{
+        width: 75px;
+    }
+}
+
+
 
 /* section-3 */
 
