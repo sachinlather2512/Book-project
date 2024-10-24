@@ -316,4 +316,6 @@
 .about-section{
     margin-top: 100px;
     margin-bottom: 100px;
+    border-radius: 18px;
+    box-shadow: 0px  2px 4px rgb(101, 116, 132),0px  -2px 4px rgb(101, 116, 132);
 }
