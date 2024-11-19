@@ -17,13 +17,13 @@
 </head>
 
 <body>
-    
+
     <div class="main container">
         <div class="py-3 d-flex align-items-center gap-2 contact-us">
-        <h1>Contact Us</h1> <i class="fa-solid fa-arrow-right fa-2xl"></i>
+            <h1>Contact Us</h1> <i class="fa-solid fa-arrow-right fa-2xl"></i>
         </div>
 
-        <div class="row gx-5 gy-5 my-lg-4 my-sm-1" style="height: 500px; box-shadow:inset; ">                                            
+        <div class="row gx-5 gy-5 my-lg-4 my-sm-1" style="height: 500px; box-shadow:inset; ">
 
             <div class="col-md-6 col-12">
                 <h1 class="heading">Information</h1>
@@ -62,23 +62,24 @@
                 <div class="d-flex flex-column ">
                     <h1 class="heading">Contact form</h1>
                     <div>
-                        <form class="contact-form">
+                        <form class="contact-form" action="/signup" method="post">
                             <div class="mb-3">
-                                <input type="text" placeholder="Your name" class="form-control">
+                                <input type="text" placeholder="Your name" class="form-control" required
+                                    name="username">
                             </div>
 
                             <div class="mb-3">
-                                <input type="email" placeholder="E-Mail" class="form-control">
+                                <input type="email" placeholder="E-Mail" class="form-control" required name="email">
                             </div>
 
                             <div class="mb-3">
-                                <input type="tel" maxlength="10" placeholder="Phone" class="form-control">
+                                <input type="tel" maxlength="10" placeholder="Phone" class="form-control" required
+                                    name="phone">
                             </div>
 
-                            <div class="form-floating mb-3">
-                                <textarea name="" placeholder="Message" class="form-control message"
-                                    id="floatingTextarea" style="height: 120px"></textarea>
-                                <label for="floatingTextarea">Message</label>
+                            <div class="mb-3">
+                                <textarea placeholder="Message" class="form-control messag" style="height: 120px"
+                                    required name="message"></textarea>
                             </div>
 
                             <div class="s-btn">
